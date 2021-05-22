@@ -204,3 +204,11 @@ img.delete {
 img.delete:hover {
   outline: 2px solid #a2d0c1;
 }
+
+a {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  align-self: center;
+  padding: 25px;
+}

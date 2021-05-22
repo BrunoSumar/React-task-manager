@@ -31,6 +31,7 @@ function App() {
     }
 
     return (
+      <>
       <div className="container">
         <Header
           onAdd={toggleAddTask}
@@ -47,6 +48,8 @@ function App() {
           <p className='center'>Nenhuma tarefa salva.</p>
         }
       </div>
+      <a href='https://github.com/BrunoSumar/React-task-manager'>Voltar ao repositório</a>
+      </>
     )
 }
 
