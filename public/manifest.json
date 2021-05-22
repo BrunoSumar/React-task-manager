@@ -21,6 +21,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "homepage": "https://brunosumar.github.io/React-task-manager/"
+  "background_color": "#ffffff"
 }
