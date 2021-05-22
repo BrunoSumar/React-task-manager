@@ -20,30 +20,33 @@ const AddTask = ({onAdd}) => {
     return (
       <form className='add-form' onSubmit={onSubmit}>
             <div className='form-control'>
-              <label>Tarefa</label>
+              <label htmlFor='Tarefa'>Tarefa:</label>
               <input
                 type='text'
                 placeholder='Nome da tarefa'
                 value={text}
                 onChange={(e)=> setText(e.target.value)}
+                id='Tarefa'
               />
             </div>
             <div className='form-control'>
-              <label>Data de hora</label>
+              <label htmlFor='horario'>Data e hora:</label>
               <input
                 type='text'
                 placeholder='Horario da tarefa'
                 value={day}
                 onChange={(e)=> setDay(e.target.value)}
+                id='horario'
               />
             </div>
             <div className='form-control form-control-check'>
-              <label>Criar lembrete</label>
+              <label hmmlFor='reminder'>Criar lembrete:</label>
               <input
                 type='checkbox'
                 checked={reminder}
                 value={reminder}
                 onChange={(e)=> setReminder(e.currentTarget.checked)}
+                id='reminder'
               />
             </div>
 

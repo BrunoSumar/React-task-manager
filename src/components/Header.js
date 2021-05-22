@@ -7,7 +7,7 @@ const Header = ({title, onAdd, showAdd}) => {
           <h1>{title}</h1>
           <Button
             color='green'
-            text={showAdd? 'Fechar':'Adicionar'}
+            text={showAdd? 'Ocultar menu':'Adicionar Tarefa'}
             onClick={onAdd}
           />
         </div>
@@ -15,7 +15,7 @@ const Header = ({title, onAdd, showAdd}) => {
 }
 
 Header.defaultProps = {
-    title: 'Lista de tarefas',
+    title: '- Lista de tarefas -',
 }
 
 Header.propTypes = {

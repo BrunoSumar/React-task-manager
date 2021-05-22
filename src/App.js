@@ -37,6 +37,7 @@ function App() {
           showAdd={showAddTask}
         />
         {showAddTask && <AddTask onAdd={addTask}/>}
+        <div className='divisor'></div>
         { (tasks.length > 0) ?
           <Tasks
             tasks={tasks}

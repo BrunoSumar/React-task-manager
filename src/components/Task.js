@@ -1,4 +1,4 @@
-import {FaTimes} from 'react-icons/fa'
+import deleteImg from '../delete.svg'
 
 const Task = ({task, onDelete, onToggle}) => {
     return (
@@ -8,9 +8,10 @@ const Task = ({task, onDelete, onToggle}) => {
         >
           <h3>
             {task.text}
-            <FaTimes
-              style={{color:'red'}}
-              onClick={() => onDelete(task.id)}
+            <img
+              src={deleteImg}
+              alt='Deletar tarefa'
+              className='delete'
             />
           </h3>
             <p>{task.day}</p>
@@ -19,3 +20,7 @@ const Task = ({task, onDelete, onToggle}) => {
 }
 
 export default Task
+            // <FaTimes
+            //   style={{color:'red'}}
+            //   onClick={() => onDelete(task.id)}
+            // />
