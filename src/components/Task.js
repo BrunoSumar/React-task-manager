@@ -12,6 +12,7 @@ const Task = ({task, onDelete, onToggle}) => {
               src={deleteImg}
               alt='Deletar tarefa'
               className='delete'
+              onClick={()=>onDelete(task.id)}
             />
           </h3>
             <p>{task.day}</p>
@@ -20,7 +21,3 @@ const Task = ({task, onDelete, onToggle}) => {
 }
 
 export default Task
-            // <FaTimes
-            //   style={{color:'red'}}
-            //   onClick={() => onDelete(task.id)}
-            // />
